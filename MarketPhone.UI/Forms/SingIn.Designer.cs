@@ -70,6 +70,7 @@
             SingUpLabel.Size = new Size(75, 25);
             SingUpLabel.TabIndex = 9;
             SingUpLabel.Text = "Sing Up";
+            SingUpLabel.Click += SingUpLabel_Click;
             SingUpLabel.MouseEnter += SingUpLabel_MouseEnter;
             SingUpLabel.MouseLeave += SingUpLabel_MouseLeave;
             // 
