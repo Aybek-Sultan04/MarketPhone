@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Services.Interfaces
 {
-   public class IRepository<T>
+   public interface IRepository<T>
     {
         int Create(T entity);
         int Update(T entity);

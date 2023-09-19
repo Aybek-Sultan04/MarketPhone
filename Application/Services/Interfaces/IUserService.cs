@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Application.Services.Interfaces
 {
-    public class IUserService : IRepository<User>
+    public interface IUserService : IRepository<User>
     {
+
 
     }
 }
+
+

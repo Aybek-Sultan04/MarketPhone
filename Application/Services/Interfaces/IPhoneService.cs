@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application.Services.Interfaces
 {
-    public class IPhoneService: IRepository<Phone>
+    public interface IPhoneService: IRepository<Phone>
     {
     }
 }
