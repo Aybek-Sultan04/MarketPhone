@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace MarketPhone.UI.Forms
+﻿namespace MarketPhone.UI.Forms
 {
     public partial class SingIn : Form
     {
         public SingIn()
         {
             InitializeComponent();
+            this.PasswordBox.Size = new Size(this.LoginBox.Width, this.LoginBox.Height);
+        }
+
+        private void ExitLabel_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
         }
     }
 }
