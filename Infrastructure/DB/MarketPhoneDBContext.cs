@@ -7,7 +7,6 @@ public class MarketPhoneDBContext:DbContext
 {
     public MarketPhoneDBContext()
     {
-        
     }
 
     public MarketPhoneDBContext(DbContextOptions options):base(options) 
@@ -22,6 +21,7 @@ public class MarketPhoneDBContext:DbContext
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseNpgsql("Host=::1; Port=5432; Database=PhoneMarket; User Id=postgres; Password=2004-12-17");
+        string config = File.ReadAllText(@"../Infrastructure/DB/ConfigForDb.txt");
+        optionsBuilder.UseNpgsql(config);
     }
 }
