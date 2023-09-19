@@ -25,5 +25,12 @@ namespace MarketPhone.UI.Forms
             SingIn singIn = new SingIn();
             singIn.Show();
         }
+
+        private void BackLabel_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            SingIn singIn = new SingIn();
+            singIn.Show();
+        }
     }
 }

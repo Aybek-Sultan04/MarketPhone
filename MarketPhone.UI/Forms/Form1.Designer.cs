@@ -38,6 +38,7 @@
             label2 = new Label();
             label3 = new Label();
             button1 = new Button();
+            BackLabel = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -86,11 +87,19 @@
             button1.Name = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
+            // BackLabel
+            // 
+            resources.ApplyResources(BackLabel, "BackLabel");
+            BackLabel.ForeColor = Color.FromArgb(239, 4, 4);
+            BackLabel.Name = "BackLabel";
+            BackLabel.Click += BackLabel_Click_1;
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(94, 153, 219);
+            Controls.Add(BackLabel);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -117,5 +126,6 @@
         private Label label2;
         private Label label3;
         private Button button1;
+        private Label BackLabel;
     }
 }
