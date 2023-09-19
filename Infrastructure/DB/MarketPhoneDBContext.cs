@@ -24,4 +24,12 @@ public class MarketPhoneDBContext:DbContext
         string config = File.ReadAllText(@"../Infrastructure/DB/ConfigForDb.txt");
         optionsBuilder.UseNpgsql(config);
     }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Phone>()
+       .HasOne(p => p.Post)
+       .WithOne(p => p.Phone)
+       .HasForeignKey<Post>(p => p.PhoneId);
+    }
 }
