@@ -33,8 +33,8 @@ namespace MarketPhone.UI.Properties {
         internal Resources() {
         }
 
-        public static Image CloseEyeForSingIn { get; internal set; }
-        public static Image OpenEyeForSingIn { get; internal set; }
+        public static Image CloseEyeForSingIn1 { get; internal set; }
+        public static Image OpenEyeForSingIn1 { get; internal set; }
 
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
