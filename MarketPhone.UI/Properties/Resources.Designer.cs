@@ -59,5 +59,25 @@ namespace MarketPhone.UI.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CloseEyeForSingIn {
+            get {
+                object obj = ResourceManager.GetObject("CloseEyeForSingIn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OpenEyeForSingIn {
+            get {
+                object obj = ResourceManager.GetObject("OpenEyeForSingIn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

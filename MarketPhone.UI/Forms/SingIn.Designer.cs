@@ -29,16 +29,21 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            SingInButton = new Button();
+            CloseOpenPassword = new PictureBox();
             PasswordBox = new TextBox();
             label1 = new Label();
             LoginBox = new TextBox();
             ExitLabel = new Label();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)CloseOpenPassword).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(223, 220, 59);
+            panel1.Controls.Add(SingInButton);
+            panel1.Controls.Add(CloseOpenPassword);
             panel1.Controls.Add(PasswordBox);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(LoginBox);
@@ -48,11 +53,36 @@
             panel1.Size = new Size(500, 600);
             panel1.TabIndex = 0;
             // 
+            // SingInButton
+            // 
+            SingInButton.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            SingInButton.Location = new Point(156, 418);
+            SingInButton.Name = "SingInButton";
+            SingInButton.Size = new Size(121, 46);
+            SingInButton.TabIndex = 6;
+            SingInButton.Text = "Enter";
+            SingInButton.UseVisualStyleBackColor = true;
+            SingInButton.MouseEnter += SingInButton_MouseEnter;
+            SingInButton.MouseLeave += SingInButton_MouseLeave;
+            // 
+            // CloseOpenPassword
+            // 
+            CloseOpenPassword.Image = Properties.Resources.CloseEyeForSingIn;
+            CloseOpenPassword.Location = new Point(403, 333);
+            CloseOpenPassword.Name = "CloseOpenPassword";
+            CloseOpenPassword.Size = new Size(44, 44);
+            CloseOpenPassword.SizeMode = PictureBoxSizeMode.StretchImage;
+            CloseOpenPassword.TabIndex = 5;
+            CloseOpenPassword.TabStop = false;
+            CloseOpenPassword.Click += CloseOpenPassword_Click;
+            CloseOpenPassword.DoubleClick += CloseOpenPassword_DoubleClick;
+            // 
             // PasswordBox
             // 
+            PasswordBox.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             PasswordBox.Location = new Point(47, 334);
             PasswordBox.Name = "PasswordBox";
-            PasswordBox.Size = new Size(350, 27);
+            PasswordBox.Size = new Size(350, 43);
             PasswordBox.TabIndex = 4;
             // 
             // label1
@@ -67,6 +97,7 @@
             // 
             // LoginBox
             // 
+            LoginBox.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             LoginBox.Location = new Point(47, 222);
             LoginBox.Multiline = true;
             LoginBox.Name = "LoginBox";
@@ -97,6 +128,7 @@
             Text = "SingIn";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)CloseOpenPassword).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -108,5 +140,7 @@
         private TextBox PasswordBox;
         private Label label1;
         private TextBox LoginBox;
+        private PictureBox CloseOpenPassword;
+        private Button SingInButton;
     }
 }
