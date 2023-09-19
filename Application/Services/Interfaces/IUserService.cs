@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Domain.Entity;
 
-namespace Application.Services.Interfaces
+namespace Application.Services.Interfaces;
+
+public interface IUserService : IRepository<User>
 {
-    public class IUserService : IRepository<User>
-    {
 
-    }
 }

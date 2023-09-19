@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Domain.Entity;
 
-namespace Application.Services.Interfaces
+namespace Application.Services.Interfaces;
+
+public interface IPhoneService : IRepository<Phone>
 {
-    public class IPhoneService: IRepository<Phone>
-    {
-    }
 }
