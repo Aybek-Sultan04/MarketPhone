@@ -32,5 +32,10 @@ namespace MarketPhone.UI.Forms
             SingIn singIn = new SingIn();
             singIn.Show();
         }
+
+        private void SingUpButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sign Up");
+        }
     }
 }

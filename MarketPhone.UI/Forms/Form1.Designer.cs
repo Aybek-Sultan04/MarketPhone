@@ -37,7 +37,7 @@
             textBox4 = new TextBox();
             label2 = new Label();
             label3 = new Label();
-            button1 = new Button();
+            SingUpButton = new Button();
             BackLabel = new Label();
             SuspendLayout();
             // 
@@ -81,11 +81,12 @@
             resources.ApplyResources(label3, "label3");
             label3.Name = "label3";
             // 
-            // button1
+            // SingUpButton
             // 
-            resources.ApplyResources(button1, "button1");
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(SingUpButton, "SingUpButton");
+            SingUpButton.Name = "SingUpButton";
+            SingUpButton.UseVisualStyleBackColor = true;
+            SingUpButton.Click += SingUpButton_Click;
             // 
             // BackLabel
             // 
@@ -100,7 +101,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(94, 153, 219);
             Controls.Add(BackLabel);
-            Controls.Add(button1);
+            Controls.Add(SingUpButton);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(textBox4);
@@ -125,7 +126,7 @@
         private TextBox textBox4;
         private Label label2;
         private Label label3;
-        private Button button1;
+        private Button SingUpButton;
         private Label BackLabel;
     }
 }
